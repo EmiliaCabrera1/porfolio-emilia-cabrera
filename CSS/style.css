@@ -115,26 +115,25 @@ img {
 }
 
 .q {
-  height: 200px;
   background-color: #9cafaa;
   justify-content: center;
   margin-left: -100px;
   margin-right: -100px;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 24px;
+  padding-top: 24px;
   align-content: center;
 }
 .cite-text {
   justify-content: center;
   margin-left: 100px;
   margin-right: 100px;
+  font-size: 24px;
 }
+
 .cite {
-  justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  font: size 34px;
+  text-align: center;
+  font-size: 50px;
   font-style: bold;
 }
