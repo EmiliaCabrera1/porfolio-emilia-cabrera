@@ -11,6 +11,9 @@ body {
   background-color: #e7eadd;
   width: 100%;
 }
+button {
+  font-family: "Poppins", sans-serif;
+}
 .nav {
   display: flex;
   width: flex;
@@ -88,7 +91,7 @@ main {
   justify-content: center;
 }
 .card-content {
-  justify-content: center;
+  justify-items: center;
   width: 232px;
   height: 260px;
   margin: 20px;
@@ -99,11 +102,10 @@ main {
 .img-card {
   width: 128px;
   height: 128px;
-  justify-content: center;
   margin-top: 30px;
   margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title-card {
   text-align: center;
@@ -136,4 +138,176 @@ img {
   text-align: center;
   font-size: 50px;
   font-style: bold;
+}
+
+/* Tablet */
+
+@media (max-width: 976px) {
+  .nav {
+    padding: 8px 8px;
+    gap: 20px;
+    font-size: 13px;
+  }
+
+  .button-secondary {
+    padding: 4px 0px;
+  }
+  .button-primary {
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 8px;
+  }
+  main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .rigth-img {
+    float: left;
+    width: 50%;
+  }
+  .heading-0 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .name {
+    font-size: 45px;
+    margin-bottom: 8px;
+  }
+  .text-0 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .heading {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .text {
+    margin-bottom: 30px;
+  }
+  .card-content {
+    width: 120px;
+    height: 150px;
+    margin: 8px;
+    border-radius: 8px;
+  }
+  .img-card {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .title-card {
+    font-size: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .q {
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+  .cite-text {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 18px;
+  }
+
+  .cite {
+    font-size: 25px;
+  }
+}
+
+/* Celu */
+
+@media (max-width: 576px) {
+  .nav {
+    padding: 6px 6px;
+    gap: 10px;
+    font-size: 10px;
+  }
+  button {
+    font-size: 12px;
+  }
+  .button-secondary {
+    padding: 3px 0px;
+  }
+  .button-primary {
+    padding: 7px 7px;
+    gap: 3px;
+    border-radius: 8px;
+  }
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .rigth-img {
+    float: left;
+    width: 50%;
+  }
+  .heading-0 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .name {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .text-0 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .heading {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .text {
+    margin-bottom: 20px;
+  }
+  .card-content {
+    width: 60px;
+    height: 90px;
+    margin: 8px;
+    border-radius: 8px;
+  }
+  .img-card {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .title-card {
+    text-align: center;
+    font-size: 12px;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  .q {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .cite-text {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+  }
+
+  .cite {
+    font-size: 20px;
+  }
 }
