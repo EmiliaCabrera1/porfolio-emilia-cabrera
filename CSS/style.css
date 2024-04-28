@@ -18,6 +18,12 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+h2 {
+  margin: 10px;
+}
+p {
+  margin: 10px 10px 20px 10px;
+}
 
 .nav {
   display: flex;
@@ -153,6 +159,80 @@ img {
   font-style: bold;
   padding-top: 20px;
   padding: 20px;
+}
+
+.seccion-contactame {
+  display: inline-flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 40px;
+  padding: 30px;
+}
+.contactame {
+  width: 50%;
+  padding: 20px;
+}
+.redes-contactame {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 23px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a + i {
+  width: 25%;
+}
+
+a + h4 {
+  width: 75%;
+}
+
+.formulario {
+  width: 50%;
+  padding: 20px;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+  border-radius: 10px;
+  background: rgba(156, 175, 170, 0.5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-style: none;
+  padding: 8px 20px;
+  margin: 8px;
+}
+placeholder {
+  color: #5d5d5d;
+}
+.input50 {
+  display: block;
+  padding: 20px;
+}
+.input100 {
+  display: block;
+  padding: 20px;
+}
+textarea {
+  display: block;
+  border-radius: 10px;
+  background: rgba(156, 175, 170, 0.5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-style: none;
+}
+.button-formulario {
+  display: inline-flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Verde-oscuro, #9cafaa);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Tablet */
