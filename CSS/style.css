@@ -1,11 +1,10 @@
 * {
   text-decoration: none;
   margin: 0%;
+  scroll-behavior: smooth;
+  scrollbar-color:  #9cafaa ;  #fbf3d5;
 }
-@font-face {
-  font-family: Poppins;
-  src: url("fonts/Poppins-ExtraLight");
-}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #e7eadd;
@@ -19,10 +18,10 @@ img {
   max-height: 100%;
 }
 h2 {
-  margin: 10px;
+  margin: 10px 0px 20px 0px;
 }
 p {
-  margin: 10px 10px 20px 10px;
+  margin: 10px 0px 20px 0px;
 }
 a {
 text-decoration: none;
@@ -44,7 +43,7 @@ color: black;
 .button-secondary {
   display: flex;
   padding: 8px 0px;
-  border: 0cap;
+  border: none;
   background: none;
 }
 .button-primary {
@@ -52,7 +51,7 @@ color: black;
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  margin-right: 20px;
   border-radius: 10px;
   border: #9cafaa;
   background: var(--Verde-oscuro, #9cafaa);
@@ -66,11 +65,13 @@ main {
   display: flex;
 }
 .left-text {
+  margin-top: 50px;
   width: 50%;
   align-content: center;
 }
 .rigth-img {
-  width: 50%;
+  margin-top: 50px;
+  margin-left: auto;
 }
 .heading-0 {
   font-size: 45px;
@@ -107,8 +108,8 @@ main {
 .card-content {
   display: block;
   justify-items: center;
-  width: 232px;
-  height: 260px;
+  width: 200px;
+  height: 230px;
   margin: 20px;
   border-radius: 10px;
   background: #fff;
@@ -144,7 +145,6 @@ img {
 .comillas {
   display: block;
   text-align: center;
-  padding-top: 20px;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -160,17 +160,17 @@ img {
   text-align: center;
   font-size: 50px;
   font-style: bold;
-  padding-top: 20px;
   padding: 20px;
 }
 
 .seccion-contactame {
-  display: inline-flex;
+  display: flex;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 30px;
   padding: 30px;
+
 }
 .contactame {
   width: 50%;
@@ -228,6 +228,7 @@ placeholder {
 .input50 {
   display: block;
   max-width: 50%;
+
 }
 .input100 {
   display: block;
@@ -264,170 +265,213 @@ gap: 50px;
   display: flex;
   gap: 15px;
   justify-content: center;
-  
   padding-bottom: 30px;
 }
 
+
+
+
 /* Tablet */
 
+
+
+
 @media (max-width: 976px) {
-  .nav {
-    padding: 8px 8px;
-    gap: 20px;
-    font-size: 13px;
-  }
-
-  .button-secondary {
-    padding: 4px 0px;
-    font-size: 10px;
-  }
-  .button-primary {
-    padding: 5px 10px;
-    gap: 5px;
-    border-radius: 8px;
-    font-size: 10px;
-  }
-  main {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .rigth-img {
-    float: left;
-    width: 50%;
-  }
-  .heading-0 {
-    font-size: 30px;
-    margin-bottom: 8px;
-  }
-  .name {
-    font-size: 45px;
-    margin-bottom: 8px;
-  }
-  .text-0 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .heading {
-    margin-bottom: 15px;
-    font-size: 25px;
-  }
-  .text {
-    margin-bottom: 30px;
-  }
-  .card-content {
-    width: 221px;
-    height: 248px;
-    margin: 8px;
-    border-radius: 8px;
-  }
-
-  .title-card {
-    font-size: 25px;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .q {
-    margin-left: -50px;
-    margin-right: -50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-bottom: 24px;
-    padding-top: 24px;
-  }
-  .cite-text {
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 18px;
-  }
-
-  .cite {
-    font-size: 25px;
-  }
-  .comillas {
-    width: 70px;
-    height: 70px;
-  }
+.nav { 
+  gap: 40px;
 }
+main {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.heading-0 {
+  font-size: 35px;
+}
+.name {
+  font-size: 50px;
+}
+.text-0 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.heading {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.text {
+  margin-bottom: 30px;
+}
+.card-content {
+  width: 160px;
+  height: 180px;
+  margin: 15px;
+  border-radius: 10px;
+}
+.img-card {
+  height: 50%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.title-card {
+  font-size: 20px;
+}
+.q {
+  margin-left: -80px;
+  margin-right: -80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.cite-text {
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 20px;
+}
+.cite {
+  font-size: 40px;
+}
+.seccion-contactame {
+  margin: 20px;
+  padding: 20px;
+}
+.redes-contactame {
+  gap: 18px;
+}
+footer {
+gap: 40px;
+}
+.div-button-secondary-footer {
+  gap: 10px;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+}
+
+
+
 
 /* Celu */
 
-@media (max-width: 576px) {
-  .nav {
-    padding: 6px 6px;
-    gap: 10px;
-    font-size: 10px;
+
+
+
+@media (max-width: 576px){
+  h2 {
+    margin: 8px 0px 15px 0px;
+    font-size: 15px;
+  }
+  p {
+    margin: 8px 0px 15px 0px;
   }
   button {
-    font-size: 8px;
+  font-size: 10px;
   }
-  .button-secondary {
-    padding: 3px 0px;
+  .nav { 
+    gap: 10px;
+  }
+  
+  
+  main {
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .button-primary {
-    padding: 7px 7px;
-    gap: 3px;
-    border-radius: 8px;
+    padding: 8px 10px;
   }
-  main {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .rigth-img {
-    float: left;
-    width: 50%;
-  }
+
   .heading-0 {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   .name {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
   .text-0 {
-    font-size: 16px;
+    font-size: 10px;
     margin-bottom: 10px;
   }
   .heading {
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 15px;
   }
   .text {
     margin-bottom: 20px;
   }
   .card-content {
-    width: 130px;
-    height: 146px;
-    margin: 8px;
-    border-radius: 8px;
+    width: 100px;
+    height: 110px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .img-card {
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .title-card {
-    text-align: center;
     font-size: 12px;
   }
-
+  
   .q {
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  .cite-text {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 16px;
-  }
-
-  .cite {
-    font-size: 20px;
+    margin-left: -60px;
+    margin-right: -60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    padding-top: 18px;
   }
   .comillas {
-    width: 60px;
-    height: 60px;
+    padding-top: 15px;
+    padding: 15px;
   }
+  .cite-text {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 18px;
+  }
+  
+  .cite {
+    font-size: 30px;
+  }
+  
+  .seccion-contactame {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    flex-flow: row wrap;
+  }
+
+.texto-contactame {
+  font-size: 12px;
 }
+.contactame {
+  width: 100%;
+}
+  .formulario {
+    width: 100%;
+    padding: 15px;
+  }
+h4 {
+  font-size: 12px;
+}
+  form {
+    margin-top: 15px;
+  }
+  input {
+    border-radius: 8px;
+  }
+  textarea {
+    border-radius: 8px;
+  }
+  
+  .button-formulario {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  footer {
+  gap: 30px;
+  }
+  .div-ico-footer {
+    padding-bottom: 15px;
+  }
+  }
