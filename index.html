@@ -9,18 +9,24 @@
   </head>
   <body>
     <header class="nav">
-      <button class="button-secondary">HOLA</button>
-      <button class="button-secondary">CONOCIMIENTOS</button>
-      <button class="button-secondary">PROYECTOS</button>
-      <button class="button-primary">CONTACTO</button>
+      <button class="button-secondary"><a href="#hola">HOLA</a></button>
+      <button class="button-secondary">
+        <a href="#conocimientos">CONOCIMIENTOS</a>
+      </button>
+      <button class="button-secondary">
+        <a href="#proyectos">PROYECTOS</a>
+      </button>
+      <button class="button-primary"><a href="#contacto">CONTACTO</a></button>
     </header>
     <main>
-      <section class="hola">
+      <section class="hola" id="hola">
         <div class="left-text">
           <h2 class="heading-0">Hola, soy</h2>
           <h1 class="name">Emilia Cabrera</h1>
           <p class="text-0">Diseñadora y desarrolladora</p>
-          <button class="button-primary">MIS PROYECTOS</button>
+          <button class="button-primary">
+            <a href="#proyectos">MIS PROYECTOS</a>
+          </button>
         </div>
         <div class="rigth-img">
           <div>
@@ -33,7 +39,7 @@
       </section>
       <section>
         <div class="center-text">
-          <h2 class="heading">Mis conocimientos</h2>
+          <h2 class="heading" id="conocimientos">Mis conocimientos</h2>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur. Est tortor nulla
             pellentesque sagittis volutpat elit orci eget. Id congue dictum
@@ -90,7 +96,7 @@
       </section>
       <section>
         <div class="center-text">
-          <h2 class="heading">Mis proyectos</h2>
+          <h2 class="heading" id="proyectos">Mis proyectos</h2>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur. Est tortor nulla
             pellentesque sagittis volutpat elit orci eget. Id congue dictum
@@ -146,7 +152,7 @@
         </div>
       </section>
       <section class="seccion-contactame">
-        <div class="contactame">
+        <div class="contactame" id="contacto">
           <h2>Contactame</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
@@ -219,21 +225,29 @@
     </main>
     <footer>
       <div class="div-button-secondary-footer">
-        <button class="button-secondary">HOLA</button>
-        <button class="button-secondary">CONOCIMIENTOS</button>
-        <button class="button-secondary">PROYECTOS</button>
-        <button class="button-secondary">CONTACTO</button>
+        <button class="button-secondary"><a href="#hola">HOLA</a></button>
+        <button class="button-secondary">
+          <a href="#conocimientos">CONOCIMIENTOS</a>
+        </button>
+        <button class="button-secondary">
+          <a href="#proyectos">PROYECTOS</a>
+        </button>
+        <button class="button-secondary">
+          <a href="#contacto">CONTACTO</a>
+        </button>
       </div>
       <div class="div-ico-footer">
-        <i class="ico-footer"
+        <a
+          class="ico-footer"
+          href="https://www.linkedin.com/in/maria-emilia-cabrera-582740115/"
           ><img src="./img/linkedin-footer.svg" alt="Logo Linkedin"
-        /></i>
-        <i class="ico-footer"
+        /></a>
+        <a class="ico-footer" href="emi.22692@gmail.com"
           ><img src="./img/gmail-footer.svg" alt="Logo Gmail"
-        /></i>
-        <i class="ico-footer"
+        /></a>
+        <a class="ico-footer" href="https://www.behance.net/emiliacabrera"
           ><img src="./img/behance-footer.svg" alt="Logo Behance"
-        /></i>
+        /></a>
       </div>
     </footer>
   </body>
