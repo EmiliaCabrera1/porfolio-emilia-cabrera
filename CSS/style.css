@@ -61,6 +61,22 @@ a:hover {
   background: var(--Verde-oscuro, #9cafaa);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.button-primary:hover {
+  background: rgba(156, 175, 170, 0.80);
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
+  hsba(0, 0%, 0%, 1)
+  hsba(164, 11%, 69%, 0.8)
+} 
+.button-primary:hover a {
+  color: black;
+  font-weight: normal;
+}
+.button-primary:active {
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40) inset;
+
+}
+
+
 main {
   margin-left: 100px;
   margin-right: 100px;
@@ -120,6 +136,11 @@ main {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card-content:hover {
+  border-color: #DD5746;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
+
 }
 .img-card {
   width: auto;
@@ -229,11 +250,32 @@ textarea {
   padding: 8px 0px 8px 8px;
   margin: 8px 8px 8px 0px;
   width: 100%;
+} 
+input:hover {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
+    border: 0.5px solid var(--Rojo-claro, #DD5746);
+}
+textarea:hover {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
+    border: 0.5px solid var(--Rojo-claro, #DD5746);
+}
+input:focus {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
+    border: 0.5px solid var(--Rojo-claro, #DD5746);
+}
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
+    border: 0.5px solid var(--Rojo-claro, #DD5746);
 }
 
 placeholder {
   color: #5d5d5d;
 }
+
 .input50 {
   display: block;
   width: 100% ;
@@ -259,6 +301,16 @@ width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-top: 20px;
+  border: none;
+}
+.button-formulario:hover {
+  background: rgba(156, 175, 170, 0.80);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  hsba(0, 0%, 0%, 1)
+  hsba(164, 11%, 69%, 0.8) 
+  color: #dd5746;
+  font-weight: bold;
 }
 
 footer {
