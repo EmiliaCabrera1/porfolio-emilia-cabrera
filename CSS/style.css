@@ -228,8 +228,14 @@ placeholder {
 .input50 {
   display: block;
   max-width: 50%;
-
 }
+
+.field {
+display: flex;
+gap: 20px;
+width: 100%;
+}
+
 .input100 {
   display: block;
   width: 100%;
@@ -451,6 +457,7 @@ gap: 40px;
     width: 100%;
     padding: 15px;
   }
+
 h4 {
   font-size: 12px;
 }
