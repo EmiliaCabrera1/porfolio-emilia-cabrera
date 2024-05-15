@@ -270,6 +270,12 @@ textarea:focus {
   outline: none;
   box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
     border: 0.5px solid var(--Rojo-claro, #DD5746);
+} 
+
+/* algo asi para el hover de las img */
+i:hover {
+  stroke: #DD5746;
+  fill: #DD5746;
 }
 
 placeholder {
@@ -305,14 +311,18 @@ width: 100%;
 }
 .button-formulario:hover {
   background: rgba(156, 175, 170, 0.80);
-
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40);
   hsba(0, 0%, 0%, 1)
-  hsba(164, 11%, 69%, 0.8) 
-  color: #dd5746;
-  font-weight: bold;
+  hsba(164, 11%, 69%, 0.8)
+} 
+.button-formulario:hover a {
+  color: black;
+  font-weight: normal;
 }
+.button-formulario:active {
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.40) inset;
 
+}
 footer {
 background: var(--Verde-oscuro, #9CAFAA);
 box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -349,8 +359,8 @@ gap: 50px;
   gap: 40px;
 }
 main {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .heading-0 {
   font-size: 35px;
@@ -384,8 +394,8 @@ main {
   font-size: 20px;
 }
 .q {
-  margin-left: -80px;
-  margin-right: -80px;
+  margin-left: -60px;
+  margin-right: -60px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -427,6 +437,9 @@ gap: 40px;
 
 
 @media (max-width: 576px){
+  h1 {font-size: 18px;
+
+  }
   h2 {
     margin: 8px 0px 15px 0px;
     font-size: 15px;
@@ -441,13 +454,15 @@ gap: 40px;
     gap: 10px;
   }
   
-  
   main {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+
+  
   .button-primary {
     padding: 8px 10px;
+    font-size: 8px;
   }
 
   .heading-0 {
@@ -470,9 +485,9 @@ gap: 40px;
     margin-bottom: 20px;
   }
   .card-content {
-    width: 100px;
-    height: 110px;
-    margin: 20px;
+    width: 90px;
+    height: 100px;
+    margin: 10px;
     border-radius: 10px;
   }
   .img-card {
@@ -485,31 +500,31 @@ gap: 40px;
   }
   
   .q {
-    margin-left: -60px;
-    margin-right: -60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-bottom: 18px;
     padding-top: 18px;
   }
   .comillas {
-    padding-top: 15px;
-    padding: 15px;
+    padding-top: 10px;
+    padding: 10px;
   }
   .cite-text {
-    margin-left: 60px;
-    margin-right: 60px;
-    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 12px;
   }
   
   .cite {
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .seccion-contactame {
     border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     flex-flow: row wrap;
   }
 
@@ -530,6 +545,9 @@ h4 {
   form {
     margin-top: 15px;
   }
+  label { 
+    font-size: 12px;
+  }
   input {
     border-radius: 8px;
   }
@@ -542,7 +560,7 @@ h4 {
     gap: 8px;
   }
   footer {
-  gap: 30px;
+  gap: 15px;
   }
   .div-ico-footer {
     padding-bottom: 15px;
