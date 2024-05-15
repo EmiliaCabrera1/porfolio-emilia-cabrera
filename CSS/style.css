@@ -76,7 +76,9 @@ a:hover {
 
 }
 
-
+.hamburgesa {
+  display: none;
+}
 main {
   margin-left: 100px;
   margin-right: 100px;
@@ -211,6 +213,13 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.redes-contactame:hover path{
+  fill: #DD5746;
+  }
+  
+.redes-contactame:hover circle{
+    stroke: #DD5746;
+    }
 
 a + i {
   width: 25%;
@@ -272,12 +281,15 @@ textarea:focus {
     border: 0.5px solid var(--Rojo-claro, #DD5746);
 } 
 
-/* algo asi para el hover de las img */
-i:hover {
-  stroke: #DD5746;
-  fill: #DD5746;
+.ico-footer:hover path{
+fill: #DD5746;
 }
 
+.ico-footer:hover circle{
+  stroke: #DD5746;
+  }
+ 
+  
 placeholder {
   color: #5d5d5d;
 }
@@ -459,7 +471,7 @@ gap: 40px;
     margin-right: 20px;
   }
 
-  
+ 
   .button-primary {
     padding: 8px 10px;
     font-size: 8px;
