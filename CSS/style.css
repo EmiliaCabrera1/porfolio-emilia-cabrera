@@ -2,7 +2,7 @@
   text-decoration: none;
   margin: 0%;
   scroll-behavior: smooth;
-  scrollbar-color:  #9cafaa ;  #fbf3d5;
+  scrollbar-color: #9cafaa;
 }
 
 body {
@@ -24,8 +24,8 @@ p {
   margin: 10px 0px 20px 0px;
 }
 a {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
 }
 a:hover {
   color: #dd5746;
@@ -33,6 +33,7 @@ a:hover {
 }
 
 .nav {
+  top: 0;
   position: fixed;
   display: flex;
   width: 100%;
@@ -61,6 +62,21 @@ a:hover {
   background: var(--Verde-oscuro, #9cafaa);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.button-primary:hover {
+  background: rgba(156, 175, 170, 0.8);
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+}
+.button-primary:hover a {
+  color: black;
+  font-weight: normal;
+}
+.button-primary:active {
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4) inset;
+}
+
+.hamburgesa {
+  display: none;
+}
 main {
   margin-left: 100px;
   margin-right: 100px;
@@ -68,7 +84,7 @@ main {
 .hola {
   display: flex;
   max-width: 1200px;
-  margin: auto;
+  margin: 15px auto auto auto;
 }
 .left-text {
   margin-top: 50px;
@@ -120,6 +136,10 @@ main {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card-content:hover {
+  border-color: #dd5746;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
 }
 .img-card {
   width: auto;
@@ -176,7 +196,6 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 30px;
   padding: 30px;
-
 }
 .contactame {
   width: 50%;
@@ -189,6 +208,13 @@ img {
   gap: 23px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.redes-contactame:hover path {
+  fill: #dd5746;
+}
+
+.redes-contactame:hover circle {
+  stroke: #dd5746;
 }
 
 a + i {
@@ -230,19 +256,44 @@ textarea {
   margin: 8px 8px 8px 0px;
   width: 100%;
 }
+input:hover {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+  border: 0.5px solid var(--Rojo-claro, #dd5746);
+}
+textarea:hover {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+  border: 0.5px solid var(--Rojo-claro, #dd5746);
+}
+input:focus {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+  border: 0.5px solid var(--Rojo-claro, #dd5746);
+}
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+  border: 0.5px solid var(--Rojo-claro, #dd5746);
+}
 
 placeholder {
   color: #5d5d5d;
 }
+
+textarea::placeholder {
+  color: #5d5d5d;
+}
+
 .input50 {
   display: block;
-  width: 100% ;
+  width: 100%;
 }
 
 .field {
-display: flex;
-gap: 20px;
-width: 100%;
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
 .input100 {
@@ -259,122 +310,129 @@ width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-top: 20px;
+  border: none;
 }
-
+.button-formulario:hover {
+  background: rgba(156, 175, 170, 0.8);
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+}
+.button-formulario:hover a {
+  color: black;
+  font-weight: normal;
+}
+.button-formulario:active {
+  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4) inset;
+}
 footer {
-background: var(--Verde-oscuro, #9CAFAA);
-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-hsba(164, 11%, 69%, 1)
-display: flex;
-width: 100%;
-height: auto;
-gap: 50px;
+  background: var(--Verde-oscuro, #9cafaa);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 20px;
 }
 .div-button-secondary-footer {
   display: flex;
+  flex-direction: row;
   gap: 10px;
   justify-content: center;
   padding-top: 30px;
-  margin-bottom: 15px;
+  width: 100%;
 }
 .div-ico-footer {
   display: flex;
+  flex-direction: row;
   gap: 15px;
   justify-content: center;
   padding-bottom: 30px;
+  width: 100%;
+}
+.ico-footer:hover path {
+  fill: #dd5746;
 }
 
-
-
+.ico-footer:hover circle {
+  stroke: #dd5746;
+}
 
 /* Tablet */
 
-
-
-
 @media (max-width: 976px) {
-.nav { 
-  gap: 40px;
-}
-main {
-  margin-left: 80px;
-  margin-right: 80px;
-}
-.heading-0 {
-  font-size: 35px;
-}
-.name {
-  font-size: 50px;
-}
-.text-0 {
-  font-size: 25px;
-  margin-bottom: 15px;
-}
-.heading {
-  margin-bottom: 15px;
-  font-size: 25px;
-}
-.text {
-  margin-bottom: 30px;
-}
-.card-content {
-  width: 160px;
-  height: 180px;
-  margin: 15px;
-  border-radius: 10px;
-}
-.img-card {
-  height: 50%;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-.title-card {
-  font-size: 20px;
-}
-.q {
-  margin-left: -80px;
-  margin-right: -80px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.cite-text {
-  margin-left: 80px;
-  margin-right: 80px;
-  font-size: 20px;
-}
-.cite {
-  font-size: 40px;
-}
-.seccion-contactame {
-  margin: 20px;
-  padding: 20px;
-}
-.redes-contactame {
-  gap: 18px;
-} 
-.field {
-flex-direction: column;
-gap: 0;
+  .nav {
+    gap: 40px;
   }
-footer {
-gap: 40px;
+  main {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .heading-0 {
+    font-size: 35px;
+  }
+  .name {
+    font-size: 50px;
+  }
+  .text-0 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .heading {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .text {
+    margin-bottom: 30px;
+  }
+  .card-content {
+    width: 160px;
+    height: 180px;
+    margin: 15px;
+    border-radius: 10px;
+  }
+  .img-card {
+    height: 50%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .title-card {
+    font-size: 20px;
+  }
+  .q {
+    margin-left: -60px;
+    margin-right: -60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .cite-text {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 20px;
+  }
+  .cite {
+    font-size: 40px;
+  }
+  .seccion-contactame {
+    margin: 20px;
+    padding: 20px;
+  }
+  .redes-contactame {
+    gap: 18px;
+  }
+  .field {
+    flex-direction: column;
+    gap: 0;
+  }
+  .div-button-secondary-footer {
+    gap: 10px;
+  }
 }
-.div-button-secondary-footer {
-  gap: 10px;
-  padding-top: 30px;
-  margin-bottom: 15px;
-}
-}
-
-
-
 
 /* Celu */
 
-
-
-
-@media (max-width: 576px){
+@media (max-width: 576px) {
+  h1 {
+    font-size: 18px;
+  }
   h2 {
     margin: 8px 0px 15px 0px;
     font-size: 15px;
@@ -383,19 +441,20 @@ gap: 40px;
     margin: 8px 0px 15px 0px;
   }
   button {
-  font-size: 10px;
+    font-size: 10px;
   }
-  .nav { 
+  .nav {
     gap: 10px;
   }
-  
-  
+
   main {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+
   .button-primary {
     padding: 8px 10px;
+    font-size: 8px;
   }
 
   .heading-0 {
@@ -418,9 +477,9 @@ gap: 40px;
     margin-bottom: 20px;
   }
   .card-content {
-    width: 100px;
-    height: 110px;
-    margin: 20px;
+    width: 90px;
+    height: 100px;
+    margin: 10px;
     border-radius: 10px;
   }
   .img-card {
@@ -431,52 +490,55 @@ gap: 40px;
   .title-card {
     font-size: 12px;
   }
-  
+
   .q {
-    margin-left: -60px;
-    margin-right: -60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-bottom: 18px;
     padding-top: 18px;
   }
   .comillas {
-    padding-top: 15px;
-    padding: 15px;
+    padding-top: 10px;
+    padding: 10px;
   }
   .cite-text {
-    margin-left: 60px;
-    margin-right: 60px;
-    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 12px;
   }
-  
+
   .cite {
-    font-size: 30px;
+    font-size: 20px;
   }
-  
+
   .seccion-contactame {
     border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     flex-flow: row wrap;
   }
 
-.texto-contactame {
-  font-size: 12px;
-}
-.contactame {
-  width: 100%;
-}
+  .texto-contactame {
+    font-size: 12px;
+  }
+  .contactame {
+    width: 100%;
+  }
   .formulario {
     width: 100%;
     padding: 15px;
   }
 
-h4 {
-  font-size: 12px;
-}
+  h4 {
+    font-size: 12px;
+  }
   form {
     margin-top: 15px;
+  }
+  label {
+    font-size: 12px;
   }
   input {
     border-radius: 8px;
@@ -484,15 +546,9 @@ h4 {
   textarea {
     border-radius: 8px;
   }
-  
+
   .button-formulario {
     padding: 8px 10px;
     gap: 8px;
   }
-  footer {
-  gap: 30px;
-  }
-  .div-ico-footer {
-    padding-bottom: 15px;
-  }
-  }
+}
