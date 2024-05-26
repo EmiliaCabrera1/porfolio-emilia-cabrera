@@ -1,9 +1,9 @@
 :root {
   --color-principal: #9cafaa;
-  --color-secundario: #e7eadd;
-  --color-nav: #fbf3d5;
-  --color-acento: #dd5746;
-  --color-shadow-acento: rgba(221, 87, 70, 0.4);
+  --color-secundario: #dedfd8;
+  --color-nav: #cac6b7;
+  --color-acento: rgb(134, 10, 53);
+  --color-shadow-acento: rgba(134, 10, 53, 0.4);
   --color-input: rgba(156, 175, 170, 0.5);
 }
 * {
