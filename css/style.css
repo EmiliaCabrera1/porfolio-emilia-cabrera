@@ -1,13 +1,21 @@
+:root {
+  --color-principal: #9cafaa;
+  --color-secundario: #e7eadd;
+  --color-nav: #fbf3d5;
+  --color-acento: #dd5746;
+  --color-shadow-acento: rgba(221, 87, 70, 0.4);
+  --color-input: rgba(156, 175, 170, 0.5);
+}
 * {
   text-decoration: none;
   margin: 0%;
   scroll-behavior: smooth;
-  scrollbar-color: #9cafaa;
+  scrollbar-color: var(--color-principal);
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e7eadd;
+  background-color: var(--color-secundario);
   width: 100%;
 }
 button {
@@ -28,7 +36,7 @@ a {
   color: black;
 }
 a:hover {
-  color: #dd5746;
+  color: var(--color-acento);
   font-weight: bold;
 }
 
@@ -41,7 +49,7 @@ a:hover {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #fbf3d5;
+  background: var(--color-nav);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -64,20 +72,20 @@ a:hover {
   align-items: center;
   margin-right: 20px;
   border-radius: 10px;
-  border: #9cafaa;
-  background: var(--Verde-oscuro, #9cafaa);
+  border: var(--color-principal);
+  background: var(--color-principal);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .button-primary:hover {
-  background: rgba(156, 175, 170, 0.8);
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+  background: var(--color-principal);
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
 }
 .button-primary:hover a {
   color: black;
   font-weight: normal;
 }
 .button-primary:active {
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4) inset;
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento) inset;
 }
 
 .hamburgesa {
@@ -108,7 +116,7 @@ main {
 .name {
   font-size: 60px;
   margin-bottom: 10px;
-  color: #dd5746;
+  color: var(--color-acento);
 }
 .text-0 {
   font-size: 30px;
@@ -144,8 +152,8 @@ main {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .card-content:hover {
-  border-color: #dd5746;
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+  border-color: var(--color-acento);
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
 }
 .img-card {
   width: auto;
@@ -164,7 +172,7 @@ img {
 }
 
 .q {
-  background-color: #9cafaa;
+  background-color: var(--color-principal);
   justify-content: center;
   margin-left: -100px;
   margin-right: -100px;
@@ -216,11 +224,11 @@ img {
   margin-bottom: 10px;
 }
 .redes-contactame:hover path {
-  fill: #dd5746;
+  fill: var(--color-acento);
 }
 
 .redes-contactame:hover circle {
-  stroke: #dd5746;
+  stroke: var(--color-acento);
 }
 
 a + i {
@@ -245,7 +253,7 @@ form {
 
 input {
   border-radius: 10px;
-  background: rgba(156, 175, 170, 0.5);
+  background: var(--color-input);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-style: none;
   padding: 8px 0px 8px 8px;
@@ -255,7 +263,7 @@ input {
 
 textarea {
   border-radius: 10px;
-  background: rgba(156, 175, 170, 0.5);
+  background: var(--color-input);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-style: none;
   padding: 8px 0px 8px 8px;
@@ -264,23 +272,23 @@ textarea {
 }
 input:hover {
   outline: none;
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
-  border: 0.5px solid var(--Rojo-claro, #dd5746);
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
+  border: 0.5px solid var(--color-acento);
 }
 textarea:hover {
   outline: none;
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
-  border: 0.5px solid var(--Rojo-claro, #dd5746);
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
+  border: 0.5px solid var(--color-acento);
 }
 input:focus {
   outline: none;
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
-  border: 0.5px solid var(--Rojo-claro, #dd5746);
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
+  border: 0.5px solid var(--color-acento);
 }
 textarea:focus {
   outline: none;
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
-  border: 0.5px solid var(--Rojo-claro, #dd5746);
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
+  border: 0.5px solid var(--color-acento);
 }
 
 placeholder {
@@ -312,25 +320,25 @@ textarea::placeholder {
   padding: 8px 20px;
   gap: 10px;
   border-radius: 10px;
-  background: var(--Verde-oscuro, #9cafaa);
+  background: var(--color-principal);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-top: 20px;
   border: none;
 }
 .button-formulario:hover {
-  background: rgba(156, 175, 170, 0.8);
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4);
+  background: var(--color-principal);
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
 }
 .button-formulario:hover a {
   color: black;
   font-weight: normal;
 }
 .button-formulario:active {
-  box-shadow: 0px 3px 6px 0px rgba(221, 87, 70, 0.4) inset;
+  box-shadow: 0px 3px 6px 0px var(--color-shadow-acento) inset;
 }
 footer {
-  background: var(--Verde-oscuro, #9cafaa);
+  background: var(--color-principal);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   display: flex;
   flex-direction: column;
@@ -355,11 +363,11 @@ footer {
   width: 100%;
 }
 .ico-footer:hover path {
-  fill: #dd5746;
+  fill: var(--color-acento);
 }
 
 .ico-footer:hover circle {
-  stroke: #dd5746;
+  stroke: var(--color-acento);
 }
 
 /* Tablet */
