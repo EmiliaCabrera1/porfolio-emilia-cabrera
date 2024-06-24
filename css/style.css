@@ -6,6 +6,7 @@
   --color-shadow-acento: rgba(134, 10, 53, 0.4);
   --color-input: rgba(156, 175, 170, 0.5);
 }
+
 * {
   text-decoration: none;
   margin: 0%;
@@ -16,25 +17,33 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-secundario);
+  /* Es innecesario indicar width: 100%; ya que es el valor del body por default */
   width: 100%;
 }
+
 button {
   font-family: "Poppins", sans-serif;
 }
+
 img {
+  /* se sobreescribe en linea 169 */
   max-width: 100%;
   max-height: 100%;
 }
+
 h2 {
   margin: 10px 0px 20px 0px;
 }
+
 p {
   margin: 10px 0px 20px 0px;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   color: var(--color-acento);
   font-weight: bold;
@@ -65,6 +74,7 @@ a:hover {
   border: none;
   background: none;
 }
+
 .button-primary {
   display: flex;
   padding: 10px 20px;
@@ -76,14 +86,17 @@ a:hover {
   background: var(--color-principal);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .button-primary:hover {
   background: var(--color-principal);
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
 }
+
 .button-primary:hover a {
   color: black;
   font-weight: normal;
 }
+
 .button-primary:active {
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento) inset;
 }
@@ -91,56 +104,68 @@ a:hover {
 .hamburgesa {
   display: none;
 }
+
 main {
   margin-left: 100px;
   margin-right: 100px;
 }
+
 .hola {
   display: flex;
   max-width: 1200px;
   margin: 15px auto auto auto;
 }
+
 .left-text {
   margin-top: 50px;
   width: 50%;
   align-content: center;
 }
+
 .rigth-img {
   margin-top: 50px;
   margin-left: auto;
 }
+
 .heading-0 {
   font-size: 45px;
   margin-bottom: 10px;
 }
+
 .name {
   font-size: 60px;
   margin-bottom: 10px;
   color: var(--color-acento);
 }
+
 .text-0 {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
 .center-text {
   justify-content: center;
 }
+
 .heading {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   font-size: 35px;
 }
+
 .text {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
+
 .general-card {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
 }
+
 .card-content {
   display: block;
   justify-items: center;
@@ -151,10 +176,12 @@ main {
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .card-content:hover {
   border-color: var(--color-acento);
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
 }
+
 .img-card {
   width: auto;
   height: 50%;
@@ -162,10 +189,12 @@ main {
   margin-bottom: 20px;
   text-align: center;
 }
+
 .title-card {
   text-align: center;
   font-size: 24px;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -182,6 +211,7 @@ img {
   padding-top: 24px;
   align-content: center;
 }
+
 .comillas {
   display: block;
   text-align: center;
@@ -189,6 +219,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 .cite-text {
   text-align: center;
   margin-left: 100px;
@@ -211,10 +242,12 @@ img {
   margin: 30px;
   padding: 30px;
 }
+
 .contactame {
   width: 50%;
   padding: 20px;
 }
+
 .redes-contactame {
   display: flex;
   width: 100%;
@@ -223,6 +256,7 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .redes-contactame:hover path {
   fill: var(--color-acento);
 }
@@ -231,11 +265,11 @@ img {
   stroke: var(--color-acento);
 }
 
-a + i {
+a+i {
   width: 25%;
 }
 
-a + h4 {
+a+h4 {
   width: 75%;
 }
 
@@ -244,6 +278,7 @@ a + h4 {
   width: 50%;
   padding: 20px;
 }
+
 form {
   display: flex;
   flex-flow: row wrap;
@@ -270,30 +305,37 @@ textarea {
   margin: 8px 8px 8px 0px;
   width: 100%;
 }
+
 input:hover {
   outline: none;
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
   border: 0.5px solid var(--color-acento);
 }
+
 textarea:hover {
   outline: none;
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
   border: 0.5px solid var(--color-acento);
 }
+
 input:focus {
   outline: none;
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
   border: 0.5px solid var(--color-acento);
 }
+
 textarea:focus {
   outline: none;
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
   border: 0.5px solid var(--color-acento);
 }
 
+/*  Este 'placeholder' asi solo no genera cambios en tu código
+El placeholder es una pseudoclase, va acompañada al inicio con ::
+
 placeholder {
   color: #5d5d5d;
-}
+} */
 
 textarea::placeholder {
   color: #5d5d5d;
@@ -326,17 +368,21 @@ textarea::placeholder {
   margin-top: 20px;
   border: none;
 }
+
 .button-formulario:hover {
   background: var(--color-principal);
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento);
 }
+
 .button-formulario:hover a {
   color: black;
   font-weight: normal;
 }
+
 .button-formulario:active {
   box-shadow: 0px 3px 6px 0px var(--color-shadow-acento) inset;
 }
+
 footer {
   background: var(--color-principal);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -346,6 +392,7 @@ footer {
   height: auto;
   gap: 20px;
 }
+
 .div-button-secondary-footer {
   display: flex;
   flex-direction: row;
@@ -354,6 +401,7 @@ footer {
   padding-top: 30px;
   width: 100%;
 }
+
 .div-ico-footer {
   display: flex;
   flex-direction: row;
@@ -362,6 +410,7 @@ footer {
   padding-bottom: 30px;
   width: 100%;
 }
+
 .ico-footer:hover path {
   fill: var(--color-acento);
 }
@@ -376,66 +425,82 @@ footer {
   .nav {
     gap: 40px;
   }
+
   main {
     margin-left: 60px;
     margin-right: 60px;
   }
+
   .heading-0 {
     font-size: 35px;
   }
+
   .name {
     font-size: 50px;
   }
+
   .text-0 {
     font-size: 25px;
     margin-bottom: 15px;
   }
+
   .heading {
     margin-bottom: 15px;
     font-size: 25px;
   }
+
   .text {
     margin-bottom: 30px;
   }
+
   .card-content {
     width: 160px;
     height: 180px;
     margin: 15px;
     border-radius: 10px;
   }
+
   .img-card {
     height: 50%;
     margin-top: 25px;
     margin-bottom: 15px;
   }
+
   .title-card {
     font-size: 20px;
   }
+
   .q {
     margin-left: -60px;
     margin-right: -60px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
+
   .cite-text {
     margin-left: 80px;
     margin-right: 80px;
     font-size: 20px;
   }
+
   .cite {
     font-size: 40px;
   }
+
   .seccion-contactame {
     margin: 20px;
     padding: 20px;
   }
+
   .redes-contactame {
     gap: 18px;
   }
+
   .field {
     flex-direction: column;
     gap: 0;
   }
+
   .div-button-secondary-footer {
     gap: 10px;
   }
@@ -447,16 +512,20 @@ footer {
   h1 {
     font-size: 18px;
   }
+
   h2 {
     margin: 8px 0px 15px 0px;
     font-size: 15px;
   }
+
   p {
     margin: 8px 0px 15px 0px;
   }
+
   button {
     font-size: 10px;
   }
+
   .nav {
     height: 20px;
     gap: 10px;
@@ -476,32 +545,39 @@ footer {
     font-size: 15px;
     margin-bottom: 10px;
   }
+
   .name {
     font-size: 30px;
     margin-bottom: 10px;
   }
+
   .text-0 {
     font-size: 10px;
     margin-bottom: 10px;
   }
+
   .heading {
     margin-bottom: 10px;
     font-size: 15px;
   }
+
   .text {
     margin-bottom: 20px;
   }
+
   .card-content {
     width: 90px;
     height: 100px;
     margin: 10px;
     border-radius: 10px;
   }
+
   .img-card {
     height: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .title-card {
     font-size: 12px;
   }
@@ -514,10 +590,12 @@ footer {
     padding-bottom: 18px;
     padding-top: 18px;
   }
+
   .comillas {
     padding-top: 10px;
     padding: 10px;
   }
+
   .cite-text {
     margin-left: 30px;
     margin-right: 30px;
@@ -538,9 +616,11 @@ footer {
   .texto-contactame {
     font-size: 12px;
   }
+
   .contactame {
     width: 100%;
   }
+
   .formulario {
     width: 100%;
     padding: 15px;
@@ -549,15 +629,19 @@ footer {
   h4 {
     font-size: 12px;
   }
+
   form {
     margin-top: 15px;
   }
+
   label {
     font-size: 12px;
   }
+
   input {
     border-radius: 8px;
   }
+
   textarea {
     border-radius: 8px;
   }
