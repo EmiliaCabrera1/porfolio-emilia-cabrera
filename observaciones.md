@@ -14,7 +14,9 @@ Tu HTML, esta muy bien en líneas generales, aunque en cuanto a conceptos es imp
 
 En cuanto al style, recordá que es una mala práctica y está desaconsejado estilar sobre etiquetas HTML. Uno de los motivos es lo que te ocurre en tu código, donde en la linea 24 estilas img y reescribis el estilado en la linea 169. Por lo que te queda código duplicado y vale sólo lo último en la cascada. 
 
-El Readme está ok. Conciso pero correcto. También hice algunos comentarios en el CSS, directamente en el código, para que los veas.
+El Readme está ok. Conciso pero correcto. También hice algunos comentarios en el CSS, directamente en el código, para que los veas. 
+
+¡A seguir aprendiendo!
 
 ## Nota final: 9 (nueve)
 
