@@ -16,7 +16,7 @@ En cuanto al style, recordá que es una mala práctica y está desaconsejado est
 
 El Readme está ok. Conciso pero correcto. También hice algunos comentarios en el CSS, directamente en el código, para que los veas. 
 
-¡A seguir aprendiendo!
+Buen trabajo, ¡A seguir aprendiendo!
 
 ## Nota final: 9 (nueve)
 
